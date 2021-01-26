@@ -8,10 +8,15 @@ class Calculadora: public QDialog, public Ui::Calculadora{
     Q_OBJECT
     
 public:
-    Calculadora(QWidget *parent = 0);
+    float num;
+    char operacion;
+    Calculadora(QWidget *parent = 0);    
 
 public slots:
     void slotDigito();
+    void slotOperacion();
+    void slotIgual();
+    void slotBorrar();
 };
 
 #endif
